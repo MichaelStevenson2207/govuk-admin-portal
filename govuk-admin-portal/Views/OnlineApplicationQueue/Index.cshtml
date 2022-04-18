@@ -1,0 +1,161 @@
+﻿
+@{
+    ViewData["Title"] = "Provisionl licence";
+}
+
+<main class="govuk-main-wrapper" id="main-content" role="main">
+   
+    <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-quarter">
+            <ul class="govuk-list">
+                <li>
+                    Provisional licences
+                </li>
+                <li>
+                    <a class="govuk-link" href="#">Transactions</a>
+                </li>
+                <li>
+                    <a class="govuk-link" href="#">Audit</a>
+                </li>
+            </ul>
+        </div>
+        <div class="govuk-grid-column-three-quarters">
+
+            <h1 class="govuk-heading-l">Latest provisional applications</h1>
+                       
+            <table class="govuk-table">
+                <caption class="sr-only">Latest provisional applications</caption>
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header app-custom-class">Driver number</th>
+                        <th scope="col" class="govuk-table__header app-custom-class">Name</th>
+                        <th scope="col" class="govuk-table__header app-custom-class">Type</th>
+                        <th scope="col" class="govuk-table__header app-custom-class">Status</th>
+                        <th scope="col" class="govuk-table__header app-custom-class">Transaction ID</th>
+                        <th scope="col" class="govuk-table__header app-custom-class">Amount</th>
+                        <th scope="col" class="govuk-table__header app-custom-class">Detail</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">40000000</th>
+                        <td class="govuk-table__cell">James Hendrix</td>
+                        <td class="govuk-table__cell">Car</td>
+                        <td class="govuk-table__cell">Complete</td>
+                        <td class="govuk-table__cell">23f214c2-c981-4f90-b731-f49f77f1aec1</td>
+                        <td class="govuk-table__cell">£62.50</td>
+                        <td class="govuk-table__cell"><a href="@Url.Action("Detail","OnlineApplicationQueue")" class="govuk-link">View</a></td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">40000011</th>
+                        <td class="govuk-table__cell">Michael Carr</td>
+                        <td class="govuk-table__cell">Car</td>
+                        <td class="govuk-table__cell">Complete</td>
+                        <td class="govuk-table__cell">23f214c2-c981-4f90-b731-f22f77f1aec1</td>
+                        <td class="govuk-table__cell">£62.50</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="">View</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">40000022</th>
+                        <td class="govuk-table__cell">John Hart</td>
+                        <td class="govuk-table__cell">Car</td>
+                        <td class="govuk-table__cell">Complete</td>
+                        <td class="govuk-table__cell">23f214c2-c981-4f90-b731-f49f77f1aec1</td>
+                        <td class="govuk-table__cell">£62.50</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="">View</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">40000033</th>
+                        <td class="govuk-table__cell">Jao Felix</td>
+                        <td class="govuk-table__cell">Tractor</td>
+                        <td class="govuk-table__cell">Complete</td>
+                        <td class="govuk-table__cell">23f214c2-c981-4f90-b731-f49f77f1aec1</td>
+                        <td class="govuk-table__cell">£62.50</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="">View</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">40000067</th>
+                        <td class="govuk-table__cell">James Hendrix</td>
+                        <td class="govuk-table__cell">Car</td>
+                        <td class="govuk-table__cell">Complete</td>
+                        <td class="govuk-table__cell">23f214c2-c981-4f90-b731-f49f77f1aec1</td>
+                        <td class="govuk-table__cell">£62.50</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="">View</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">40000000</th>
+                        <td class="govuk-table__cell">James Hendrix</td>
+                        <td class="govuk-table__cell">Car</td>
+                        <td class="govuk-table__cell">Complete</td>
+                        <td class="govuk-table__cell">23f214c2-c981-4f90-b731-f49f77f1aec1</td>
+                        <td class="govuk-table__cell">£62.50</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="">View</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">40000000</th>
+                        <td class="govuk-table__cell">James Hendrix</td>
+                        <td class="govuk-table__cell">Car</td>
+                        <td class="govuk-table__cell">Complete</td>
+                        <td class="govuk-table__cell">23f214c2-c981-4f90-b731-f49f77f1aec1</td>
+                        <td class="govuk-table__cell">£62.50</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="">View</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">40000670</th>
+                        <td class="govuk-table__cell">James Hendrix</td>
+                        <td class="govuk-table__cell">Moped</td>
+                        <td class="govuk-table__cell">On hold</td>
+                        <td class="govuk-table__cell">89f214c2-c981-4f90-b731-f49f77f1aec1</td>
+                        <td class="govuk-table__cell">£62.50</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="">View</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">40000067</th>
+                        <td class="govuk-table__cell">Hurdy Gurdy</td>
+                        <td class="govuk-table__cell">Car</td>
+                        <td class="govuk-table__cell">Complete</td>
+                        <td class="govuk-table__cell">23f214c2-c981-4f90-b731-f49f77f1aess1</td>
+                        <td class="govuk-table__cell">£62.50</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="hods-pagination">
+                <div class="hods-pagination__summary">
+                    Showing 1 - 25 of 737 results
+                </div>
+                <ul class="hods-pagination__list-items">
+                    <li class="hods-pagination__item"></li>
+                    <li class="hods-pagination__item"></li>
+                    <li class="hods-pagination__item">
+                        <a class="hods-pagination__link hods-pagination__link--current"
+                           href="">
+                            1
+                        </a>
+                    </li>
+                    <li class="hods-pagination__item">
+                        <a class="hods-pagination__link" href="?page=2">
+                            2
+                        </a>
+                    </li>
+                    <li class="hods-pagination__item">
+                        <a class="hods-pagination__link" href="?page=3">
+                            3
+                        </a>
+                    </li>
+                    <li class="hods-pagination__item" id="nextButton">
+                        <a class="hods-pagination__link" href="?page=2">
+                            Next
+                            <span aria-hidden="true" role="presentation">
+                                »
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "govuk-admin-portal", "govuk-admin-portal\govuk-admin-portal.csproj", "{55E5E360-265E-44EB-B86E-3D7CF2EC930B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55E5E360-265E-44EB-B86E-3D7CF2EC930B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E5E360-265E-44EB-B86E-3D7CF2EC930B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E5E360-265E-44EB-B86E-3D7CF2EC930B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E5E360-265E-44EB-B86E-3D7CF2EC930B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F108482-68FC-4D8D-951E-F2F00A99D0F3}
+	EndGlobalSection
+EndGlobal

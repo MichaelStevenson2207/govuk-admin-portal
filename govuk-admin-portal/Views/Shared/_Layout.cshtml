@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="no index, no follow" />
+    <meta name="description" content="Admin site for gov uk sites." />
+    <meta name="theme-color" content="#0a78cd" />
+    <title>@ViewData["Title"] - Admin portal</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/jquery-modal.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+</head>
+<body class="govuk-template__body">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    <partial name="../Shared/_Header.cshtml" />
+    <partial name="../Shared/_SecondaryNavigation.cshtml" />
+
+    <div class="govuk-width-container app-width-container">
+        @RenderBody()
+    </div>
+
+    <partial name="../Components/_TimeOutControl.cshtml" />
+    <partial name="../Shared/_Footer.cshtml" />
+    <partial name="../Shared/_ValidationScriptsPartial.cshtml" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <partial name="../Shared/_initializeGOVUKFrontend.cshtml" />
+    <script src="~/js/moment.js" asp-append-version="true"></script>
+    <script src="~/js/jquery-modal.js" asp-append-version="true"></script>
+    <script src="~/js/inactivity-alert.js" asp-append-version="true"></script>
+</body>
+</html>

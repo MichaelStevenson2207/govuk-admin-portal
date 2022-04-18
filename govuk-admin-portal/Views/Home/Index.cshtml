@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main class="govuk-main-wrapper" id="main-content" role="main">
+    <h1 class="govuk-heading-l">Licences admin</h1>
+    <div class="govuk-grid-row">
+        <div id="total-created" class="govuk-grid-column-one-quarter">
+
+            <span class="big-number-with-status">
+
+                <a href="@Url.Action("Index","OnlineApplicationQueue")">
+
+                    <span class="govuk-link big-number-link">
+                        <span class="big-number-smaller">
+                            <span class="big-number-number">
+                                160
+                            </span>
+                            <span class="big-number-label">Citizen</span>
+                        </span>
+                    </span>
+                </a>
+                <span class="govuk-link big-number-link">
+                    <span class="big-number-smaller">
+                        <span class="big-number-number">
+                            140
+                        </span>
+                        <span class="big-number-label">Taxi</span>
+                    </span>
+                </span>
+                <span class="big-number-status">
+                    Licenses created 300
+                </span>
+            </span>
+        </div>
+        <div id="total-completed" class="govuk-grid-column-one-quarter">
+
+            <span class="big-number-with-status">
+
+                <span class="govuk-link big-number-link">
+                    <span class="big-number-smaller">
+                        <span class="big-number-number">
+                            100
+                        </span>
+                        <span class="big-number-label">Citizen</span>
+                    </span>
+                </span>
+                <span class="govuk-link big-number-link">
+                    <span class="big-number-smaller">
+                        <span class="big-number-number">
+                            80
+                        </span>
+                        <span class="big-number-label">Taxi</span>
+                    </span>
+                </span>
+                <span class="big-number-status">
+                    Printed  180
+                </span>
+            </span>
+        </div>
+        <div id="total-documents" class="govuk-grid-column-one-quarter">
+
+            <span class="big-number-with-status">
+                <span class="govuk-link big-number-link">
+                    <span class="big-number-smaller">
+                        <span class="big-number-number">
+                            156
+                        </span>
+                        <span class="big-number-label">Citizen</span>
+                    </span>
+                </span>
+
+                <span class="govuk-link big-number-link">
+
+                    <span class="big-number-smaller">
+                        <span class="big-number-number">
+                            100
+                        </span>
+                        <span class="big-number-label">Taxi</span>
+                    </span>
+                </span>
+                <span class="big-number-status">
+                    Documents 256
+                </span>
+            </span>
+        </div>
+        <div id="total-paid" class="govuk-grid-column-one-quarter">
+            <span class="big-number-with-status">
+                <span class="govuk-link big-number-link">
+                    <span class="big-number-smaller">
+                        <span class="big-number-number">
+                            £ 90,000
+                        </span>
+                        <span class="big-number-label">Citizen</span>
+                    </span>
+                </span>
+                <span class="govuk-link big-number-link">
+
+                    <span class="big-number-smaller">
+                        <span class="big-number-number">
+                            £ 60,000
+                        </span>
+                        <span class="big-number-label">Taxi</span>
+                    </span>
+                </span>
+                <span class="big-number-status">
+                    Paid £ 150,000
+                </span>
+            </span>
+        </div>
+    </div>
+</main>
