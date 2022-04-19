@@ -6,9 +6,19 @@
 <main class="govuk-main-wrapper" id="main-content" role="main">
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
-            <h1 class="govuk-heading-l">Search</h1>
+           
+            <div class="govuk-form-group">
+                <h1 class="govuk-label-wrapper">
+                    <label class="govuk-label govuk-label--l" for="event-name">
+                        Search
+                    </label>
+                </h1>
+                <input class="govuk-input" id="event-name" name="event-name" type="text">
+            </div>
 
-
+            <button class="govuk-button" data-module="govuk-button">
+                Search
+            </button>
 
             <table class="govuk-table table-responsive-xl">
                 <caption class="sr-only">List of search results</caption>
@@ -22,18 +32,7 @@
                 </thead>
                 <tbody class="govuk-table__body">
                     <tr class="govuk-table__row">
-                        <td class="govuk-table__cell">Retrieve online applications</td>
-                        <td class="govuk-table__cell">1 April 2022</td>
-                        <td class="govuk-table__cell">No</td>
-                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Completed</strong></td>
-                        <td class="govuk-table__cell"><a class="govuk-link" href="">View</a></td>
-                    </tr>
-                    <tr class="govuk-table__row">
-                        <td class="govuk-table__cell">Smart renewals</td>
-                        <td class="govuk-table__cell">2 April 2022</td>
-                        <td class="govuk-table__cell">Yes</td>
-                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Completed with errors</strong></td>
-                        <td class="govuk-table__cell"><a class="govuk-link" href="">View</a></td>
+                        <td class="govuk-table__cell" colspan="4">No records found</td>
                     </tr>
                 </tbody>
             </table>
