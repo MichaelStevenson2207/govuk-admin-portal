@@ -10,7 +10,7 @@
             <h1 class="govuk-heading-m">James Hendrix</h1>
             <img class="img-thumbnail" alt="Driver picture" style="max-width:200px;max-height:200px;" src="~/assets/images/pauls_photo.jpg" />
             <br />
-        <dl class="govuk-summary-list--no-border">
+            <dl class="govuk-summary-list--no-border">
                 <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
                     Driver number
@@ -40,339 +40,382 @@
                 Contact details
             </dt>
             <dd class="govuk-summary-list__value">
-                <a class="govuk-link" href="tel:07700900457">07700900457</a>  
+                <a class="govuk-link" href="tel:07700900457">07700900457</a>
             </dd>
         </div>
         </dl>
     </div>
 
-        <div class="govuk-grid-column-one-half">
-                    
-            <div class="govuk-tabs" data-module="govuk-tabs">
-                <h2 class="govuk-tabs__title">
-                    Contents
-                </h2>
-                <ul class="govuk-tabs__list">
-                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#past-day">
-                            Entitlements
-                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#past-week">
-                            Endorsements
-                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#past-month">
-                            Medical
-                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#past-year">
-                            History
-                        </a>
-                    </li>
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#notes">
-                            Notes
-                        </a>
-                    </li>
-                </ul>
-                <div class="govuk-tabs__panel" id="past-day">
+    <div class="govuk-grid-column-three-quarters">
+
+        <div class="govuk-form-group">
+            <button class="govuk-button" data-module="govuk-button" type="submit" name="action" value="Record amend">Record amend</button>
+             <button class="govuk-button govuk-button--secondary" data-module="govuk-button" type="submit" name="action" value="Add note">Add note</button>
+        </div>
+
+        <div class="govuk-tabs" data-module="govuk-tabs">
+            <h2 class="govuk-tabs__title">
+                Contents
+            </h2>
+            <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                    <a class="govuk-tabs__tab" href="#past-day">
+                        Entitlements
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#past-week">
+                        Endorsements
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#past-month">
+                        Medical
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#past-year">
+                        History
+                        <strong class="govuk-tag govuk-tag--blue">
+                            3
+                        </strong>
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#notes">
+                        Notes
+                        <strong class="govuk-tag govuk-tag--blue">
+                            1
+                        </strong>
+                    </a>
+                </li>
+            </ul>
+            <div class="govuk-tabs__panel" id="past-day">
+
+                <table class="govuk-table table-responsive-xl">
+                    <caption class="govuk-table__caption sr-only">Table of data items for Entitlements</caption>
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+
+                            <th class="govuk-table__header">
+                                Category
+                            </th>
+                            <th class="govuk-table__header">
+                                Entitlement
+                            </th>
+                            <th class="govuk-table__header">
+                                Start
+                            </th>
+                            <th class="govuk-table__header">
+                                End
+                            </th>
+                            <th class="govuk-table__header">
+                                Transmission
+                            </th>
+                            <th scope="col" class="govuk-table__header"><span class="sr-only">Links</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="MOTORCYCLE MEDIUM &gt; 35KW"> A </abbr></td>
+                            <td class="govuk-table__cell">PROVISIONAL</td>
+                            <td class="govuk-table__cell">21 January 1998</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="MOTORTRICYCLE"> A (079.03) </abbr></td>
+                            <td class="govuk-table__cell">FULL - RESTRICTED</td>
+                            <td class="govuk-table__cell">19 January 2013</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+
+                                <a href="#1" data-toggle="display" title="Show more info" role="button">
+                                    <span class="glyphicon glyphicon-search table-more-info" aria-hidden="true"></span>
+                                </a>
+
+                            </td>
+                        </tr>
+                        <tr id="1" class="details-row hidden">
+                            <td colspan="6">
 
 
-                    <table class="govuk-table table-responsive-xl">
-                        <caption class="govuk-table__caption sr-only">Table of data items for Entitlements</caption>
-                        <thead class="govuk-table__head">
-                            <tr class="govuk-table__row">
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="MOTORCYCLE LIGHTWEIGHT &lt;= 11KW"> A1 </abbr></td>
+                            <td class="govuk-table__cell">PROVISIONAL</td>
+                            <td class="govuk-table__cell">2 July 2014</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="MOTORCYCLE MEDIUM &lt;= 35KW"> A2 </abbr></td>
+                            <td class="govuk-table__cell">PROVISIONAL</td>
+                            <td class="govuk-table__cell">2 July 2014</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="MOPED"> AM </abbr></td>
+                            <td class="govuk-table__cell">FULL</td>
+                            <td class="govuk-table__cell">19 January 2013</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="CAR"> B </abbr></td>
+                            <td class="govuk-table__cell">FULL</td>
+                            <td class="govuk-table__cell">8 October 2010</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="QUADRICYCLE"> B1 </abbr></td>
+                            <td class="govuk-table__cell">FULL</td>
+                            <td class="govuk-table__cell">8 October 2010</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="SMALL VEHICLE &amp; TRAILER"> BE </abbr></td>
+                            <td class="govuk-table__cell">PROVISIONAL</td>
+                            <td class="govuk-table__cell">8 October 2010</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="TRACTOR"> F </abbr></td>
+                            <td class="govuk-table__cell">FULL</td>
+                            <td class="govuk-table__cell">8 October 2010</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="ROAD ROLLER"> G </abbr></td>
+                            <td class="govuk-table__cell">PROVISIONAL</td>
+                            <td class="govuk-table__cell">8 October 2010</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="TRACKED VEHICLE"> H </abbr></td>
+                            <td class="govuk-table__cell">PROVISIONAL</td>
+                            <td class="govuk-table__cell">8 October 2010</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="MOWING MACHINE"> K </abbr></td>
+                            <td class="govuk-table__cell">FULL</td>
+                            <td class="govuk-table__cell">8 October 2010</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="MOPED"> P </abbr></td>
+                            <td class="govuk-table__cell">FULL</td>
+                            <td class="govuk-table__cell">8 October 2010</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><abbr title="MOPED &lt; 50CC"> Q </abbr></td>
+                            <td class="govuk-table__cell">FULL</td>
+                            <td class="govuk-table__cell">19 January 2013</td>
+                            <td class="govuk-table__cell">14 March 2030</td>
+                            <td class="govuk-table__cell">MANUAL</td>
+                            <td class="govuk-table__cell buttons">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+                <h2 class="govuk-heading-l">Past week</h2>
+                <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header">Case manager</th>
+                            <th scope="col" class="govuk-table__header">Cases opened</th>
+                            <th scope="col" class="govuk-table__header">Cases closed</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">David Francis</td>
+                            <td class="govuk-table__cell">24</td>
+                            <td class="govuk-table__cell">18</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Paul Farmer</td>
+                            <td class="govuk-table__cell">16</td>
+                            <td class="govuk-table__cell">20</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Rita Patel</td>
+                            <td class="govuk-table__cell">24</td>
+                            <td class="govuk-table__cell">27</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                                <th class="govuk-table__header">
-                                    Category
-                                </th>
-                                <th class="govuk-table__header">
-                                    Entitlement
-                                </th>
-                                <th class="govuk-table__header">
-                                    Start
-                                </th>
-                                <th class="govuk-table__header">
-                                    End
-                                </th>
-                                <th class="govuk-table__header">
-                                    Transmission
-                                </th>
-                                <th scope="col" class="govuk-table__header"><span class="sr-only">Links</span></th>
-                            </tr>
-                        </thead>
-                        <tbody class="govuk-table__body">
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="MOTORCYCLE MEDIUM &gt; 35KW"> A </abbr></td>
-                                <td class="govuk-table__cell">PROVISIONAL</td>
-                                <td class="govuk-table__cell">21 January 1998</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="MOTORTRICYCLE"> A (079.03) </abbr></td>
-                                <td class="govuk-table__cell">FULL - RESTRICTED</td>
-                                <td class="govuk-table__cell">19 January 2013</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
+            </div>
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+                <h2 class="govuk-heading-l">Past month</h2>
+                <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header">Case manager</th>
+                            <th scope="col" class="govuk-table__header">Cases opened</th>
+                            <th scope="col" class="govuk-table__header">Cases closed</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">David Francis</td>
+                            <td class="govuk-table__cell">98</td>
+                            <td class="govuk-table__cell">95</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Paul Farmer</td>
+                            <td class="govuk-table__cell">122</td>
+                            <td class="govuk-table__cell">131</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Rita Patel</td>
+                            <td class="govuk-table__cell">126</td>
+                            <td class="govuk-table__cell">142</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                                    <a href="#1" data-toggle="display" title="Show more info" role="button">
-                                        <span class="glyphicon glyphicon-search table-more-info" aria-hidden="true"></span>
-                                    </a>
-
-                                </td>
-                            </tr>
-                            <tr id="1" class="details-row hidden">
-                                <td colspan="6">
-
-
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="MOTORCYCLE LIGHTWEIGHT &lt;= 11KW"> A1 </abbr></td>
-                                <td class="govuk-table__cell">PROVISIONAL</td>
-                                <td class="govuk-table__cell">2 July 2014</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="MOTORCYCLE MEDIUM &lt;= 35KW"> A2 </abbr></td>
-                                <td class="govuk-table__cell">PROVISIONAL</td>
-                                <td class="govuk-table__cell">2 July 2014</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="MOPED"> AM </abbr></td>
-                                <td class="govuk-table__cell">FULL</td>
-                                <td class="govuk-table__cell">19 January 2013</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="CAR"> B </abbr></td>
-                                <td class="govuk-table__cell">FULL</td>
-                                <td class="govuk-table__cell">8 October 2010</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="QUADRICYCLE"> B1 </abbr></td>
-                                <td class="govuk-table__cell">FULL</td>
-                                <td class="govuk-table__cell">8 October 2010</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="SMALL VEHICLE &amp; TRAILER"> BE </abbr></td>
-                                <td class="govuk-table__cell">PROVISIONAL</td>
-                                <td class="govuk-table__cell">8 October 2010</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="TRACTOR"> F </abbr></td>
-                                <td class="govuk-table__cell">FULL</td>
-                                <td class="govuk-table__cell">8 October 2010</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="ROAD ROLLER"> G </abbr></td>
-                                <td class="govuk-table__cell">PROVISIONAL</td>
-                                <td class="govuk-table__cell">8 October 2010</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="TRACKED VEHICLE"> H </abbr></td>
-                                <td class="govuk-table__cell">PROVISIONAL</td>
-                                <td class="govuk-table__cell">8 October 2010</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="MOWING MACHINE"> K </abbr></td>
-                                <td class="govuk-table__cell">FULL</td>
-                                <td class="govuk-table__cell">8 October 2010</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="MOPED"> P </abbr></td>
-                                <td class="govuk-table__cell">FULL</td>
-                                <td class="govuk-table__cell">8 October 2010</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell"><abbr title="MOPED &lt; 50CC"> Q </abbr></td>
-                                <td class="govuk-table__cell">FULL</td>
-                                <td class="govuk-table__cell">19 January 2013</td>
-                                <td class="govuk-table__cell">14 March 2030</td>
-                                <td class="govuk-table__cell">MANUAL</td>
-                                <td class="govuk-table__cell buttons">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
-                    <h2 class="govuk-heading-l">Past week</h2>
-                    <table class="govuk-table">
-                        <thead class="govuk-table__head">
-                            <tr class="govuk-table__row">
-                                <th scope="col" class="govuk-table__header">Case manager</th>
-                                <th scope="col" class="govuk-table__header">Cases opened</th>
-                                <th scope="col" class="govuk-table__header">Cases closed</th>
-                            </tr>
-                        </thead>
-                        <tbody class="govuk-table__body">
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">David Francis</td>
-                                <td class="govuk-table__cell">24</td>
-                                <td class="govuk-table__cell">18</td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">Paul Farmer</td>
-                                <td class="govuk-table__cell">16</td>
-                                <td class="govuk-table__cell">20</td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">Rita Patel</td>
-                                <td class="govuk-table__cell">24</td>
-                                <td class="govuk-table__cell">27</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
-                    <h2 class="govuk-heading-l">Past month</h2>
-                    <table class="govuk-table">
-                        <thead class="govuk-table__head">
-                            <tr class="govuk-table__row">
-                                <th scope="col" class="govuk-table__header">Case manager</th>
-                                <th scope="col" class="govuk-table__header">Cases opened</th>
-                                <th scope="col" class="govuk-table__header">Cases closed</th>
-                            </tr>
-                        </thead>
-                        <tbody class="govuk-table__body">
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">David Francis</td>
-                                <td class="govuk-table__cell">98</td>
-                                <td class="govuk-table__cell">95</td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">Paul Farmer</td>
-                                <td class="govuk-table__cell">122</td>
-                                <td class="govuk-table__cell">131</td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">Rita Patel</td>
-                                <td class="govuk-table__cell">126</td>
-                                <td class="govuk-table__cell">142</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
-                    <h2 class="govuk-heading-l">History</h2>
-                    <div class="hods-timeline">
-                        <div class="hods-timeline__item">
-                            <h2 class="hods-timeline__title">
-                                Response submitted
-                            </h2>
-                            <p class="hods-timeline__date">
-                                <time datetime="2021-03-15T16:27:00.000Z">
-                                    3/15/2021, 4:27:00 PM
-                                </time>
-                            </p>
-                            <p class="hods-timeline__description">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
-                        <div class="hods-timeline__item">
-                            <h2 class="hods-timeline__title">
-                                Issue under investigation
-                            </h2>
-                            <p class="hods-timeline__by">
-                                by Douglas Pollock
-                            </p>
-                            <p class="hods-timeline__date">
-                                <time datetime="2021-03-15T10:04:00.000Z">
-                                    3/15/2021, 10:04:00 AM
-                                </time>
-                            </p>
-                            <p class="hods-timeline__description">
-                                This is a description of the event. This field
-                                accepts unformatted text only.
-                            </p>
-                        </div>
-                        <div class="hods-timeline__item">
-                            <h2 class="hods-timeline__title">
-                                Issue raised on GitHub
-                            </h2>
-                            <p class="hods-timeline__by">by Karypun</p>
-                            <p class="hods-timeline__date">
-                                <time datetime="2021-01-25T09:35:00.000Z">
-                                    1/25/2021, 9:35:00 AM
-                                </time>
-                            </p>
-                            <p class="hods-timeline__description">
-                                This is a description of the event.
-                            </p>
-                        </div>
+            </div>
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+                <h2 class="govuk-heading-l">History</h2>
+                <div class="hods-timeline">
+                    <div class="hods-timeline__item">
+                        <h2 class="hods-timeline__title">
+                            Response submitted
+                        </h2>
+                        <p class="hods-timeline__date">
+                            <time datetime="2021-03-15T16:27:00.000Z">
+                                3/15/2021, 4:27:00 PM
+                            </time>
+                        </p>
+                        <p class="hods-timeline__description">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </p>
                     </div>
-                </div>
-
-                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="notes">
+                    <div class="hods-timeline__item">
+                        <h2 class="hods-timeline__title">
+                            Issue under investigation
+                        </h2>
+                        <p class="hods-timeline__by">
+                            by Douglas Pollock
+                        </p>
+                        <p class="hods-timeline__date">
+                            <time datetime="2021-03-15T10:04:00.000Z">
+                                3/15/2021, 10:04:00 AM
+                            </time>
+                        </p>
+                        <p class="hods-timeline__description">
+                            This is a description of the event. This field
+                            accepts unformatted text only.
+                        </p>
                     </div>
-
+                    <div class="hods-timeline__item">
+                        <h2 class="hods-timeline__title">
+                            Issue raised on GitHub
+                        </h2>
+                        <p class="hods-timeline__by">by Karypun</p>
+                        <p class="hods-timeline__date">
+                            <time datetime="2021-01-25T09:35:00.000Z">
+                                1/25/2021, 9:35:00 AM
+                            </time>
+                        </p>
+                        <p class="hods-timeline__description">
+                            This is a description of the event.
+                        </p>
+                    </div>
                 </div>
             </div>
 
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="notes">
 
-        <div class="govuk-grid-column-one-quarter">
-      
+                <h2 class="govuk-heading-m">Notes</h2>
+
+           
+                    <table class="govuk-table">
+                        <caption class="govuk-table__caption sr-only">List of notes created for the application</caption>
+                        <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header" style="width:40%">Notes</th>
+                                <th scope="col" class="govuk-table__header" style="width:30%">Changed by</th>
+                                <th scope="col" class="govuk-table__header" style="width:20%">Date</th>
+                                <th scope="col" class="govuk-table__header" style="width:10%">Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                      Customer needed to know when he would recieve his licence
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                       Michael Stevenson
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        1 January 2022
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link">Edit</a>
+                                    </td>
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                
+            </div>
+
         </div>
+    </div>
+
+
+        @*<div class="govuk-grid-column-one-quarter">
+      
+        </div>*@
     </div>
 </main>

@@ -2,9 +2,10 @@
 
 namespace govuk_admin_portal.Controllers
 {
-    public class AdminController : Controller
+    public class JobsController : Controller
     {
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Jobs()
         {
             return View();
         }
