@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace govuk_admin_portal
 {
@@ -18,6 +20,21 @@ namespace govuk_admin_portal
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.ConfigureApplicationCookie(options =>
+            //{
+            //    options.Cookie.Name = "admin-cookie-policy";
+            //    options.Cookie.HttpOnly = true;
+            //    options.ExpireTimeSpan = TimeSpan.FromDays(90);
+            //});
+
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+                options.Secure = CookieSecurePolicy.Always;
+                options.ConsentCookie = new CookieBuilder() { Name = "admin-portal-cookie-policy", IsEssential = true };
+             });
+
             services.AddControllersWithViews();
         }
 
@@ -36,6 +53,7 @@ namespace govuk_admin_portal
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseCookiePolicy();
 
             app.UseRouting();
 
