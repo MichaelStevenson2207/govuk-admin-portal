@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "govuk-admin-portal", "govuk-admin-portal\govuk-admin-portal.csproj", "{55E5E360-265E-44EB-B86E-3D7CF2EC930B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "govuk-admin-portal", "govuk-admin-portal\govuk-admin-portal.csproj", "{55E5E360-265E-44EB-B86E-3D7CF2EC930B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
