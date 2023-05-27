@@ -1,9 +1,12 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
@@ -12,15 +15,6 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
     options.Secure = CookieSecurePolicy.Always;
     options.ConsentCookie = new CookieBuilder() { Name = "admin-portal-cookie-policy", IsEssential = true };
 });
-
-builder.Services.AddControllersWithViews();
-
-//services.ConfigureApplicationCookie(options =>
-//{
-//    options.Cookie.Name = "admin-cookie-policy";
-//    options.Cookie.HttpOnly = true;
-//    options.ExpireTimeSpan = TimeSpan.FromDays(90);
-//});
 
 var app = builder.Build();
 
@@ -32,9 +26,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseCookiePolicy();
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(
