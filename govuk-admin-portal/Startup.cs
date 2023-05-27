@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 
 namespace govuk_admin_portal
 {
@@ -33,7 +32,7 @@ namespace govuk_admin_portal
                 options.MinimumSameSitePolicy = SameSiteMode.None;
                 options.Secure = CookieSecurePolicy.Always;
                 options.ConsentCookie = new CookieBuilder() { Name = "admin-portal-cookie-policy", IsEssential = true };
-             });
+            });
 
             services.AddControllersWithViews();
         }

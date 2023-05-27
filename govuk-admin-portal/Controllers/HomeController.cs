@@ -1,6 +1,6 @@
-﻿using govuk_admin_portal.Models;
+﻿using System.Diagnostics;
+using govuk_admin_portal.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace govuk_admin_portal.Controllers
 {
