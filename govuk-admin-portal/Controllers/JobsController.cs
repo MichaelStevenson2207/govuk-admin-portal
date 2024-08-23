@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace govuk_admin_portal.Controllers
+namespace govuk_admin_portal.Controllers;
+
+public class JobsController : Controller
 {
-    public class JobsController : Controller
+    [HttpGet]
+    public IActionResult Jobs()
     {
-        [HttpGet]
-        public IActionResult Jobs()
-        {
-            return View();
-        }
+        return View();
     }
 }
