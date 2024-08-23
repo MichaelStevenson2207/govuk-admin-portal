@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace govuk_admin_portal.Controllers
+namespace govuk_admin_portal.Controllers;
+
+public class SettingsController : Controller
 {
-    public class SettingsController : Controller
+    [HttpGet]
+    public IActionResult Settings()
     {
-        [HttpGet]
-        public IActionResult Settings()
-        {
-            return View();
-        }
+        return View();
     }
 }

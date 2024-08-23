@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace govuk_admin_portal.Controllers
+namespace govuk_admin_portal.Controllers;
+
+public class AdminController : Controller
 {
-    public class AdminController : Controller
+    public IActionResult Index()
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        return View();
     }
 }

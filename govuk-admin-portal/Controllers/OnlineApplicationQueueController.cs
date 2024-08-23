@@ -1,19 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace govuk_admin_portal.Controllers
-{
-    public class OnlineApplicationQueueController : Controller
-    {
-        [HttpGet]
-        public IActionResult Index()
-        {
-            return View();
-        }
+namespace govuk_admin_portal.Controllers;
 
-        [HttpGet]
-        public IActionResult Detail()
-        {
-            return View();
-        }
+public class OnlineApplicationQueueController : Controller
+{
+    [HttpGet]
+    public IActionResult Index()
+    {
+        return View();
+    }
+
+    [HttpGet]
+    public IActionResult Detail()
+    {
+        return View();
     }
 }
